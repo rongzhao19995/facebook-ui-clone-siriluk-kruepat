@@ -1,0 +1,81 @@
+.header {
+    // position:fixed;
+    display:grid;
+    grid-template-columns: 25% 50% 25%;
+    background-color: $white;
+    width:100%;
+    z-index:1;
+
+    &__left {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        padding-left:2rem;
+    }
+    
+    &__center {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    &__right {
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 2rem;
+
+        div {
+            margin-left:0.5rem;
+            margin-right:0.5rem;
+        }
+
+        .avatar-wrapper {
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            cursor: pointer;
+        
+            &__avatar {
+                width: 30px;
+                height: 30px;
+                border-radius: 20px;
+                margin-left: .25rem;
+            }
+
+            &__name {
+                font-weight: 600;
+                font-size: 14px;
+                padding: 1rem;
+            }
+
+            &:hover {
+                background-color: $white-grey;
+            }
+        }
+
+        .etc-wrapper {
+            padding: 1rem;
+            background-color: $white-grey;
+            border-radius:20px;
+            cursor: pointer;
+            transition: all .25s;
+
+            svg {
+                width:20px;
+                height:20px;
+            }
+
+            &:hover {
+                background-color: $white-grey-2;
+            }
+        }
+
+    }
+}
