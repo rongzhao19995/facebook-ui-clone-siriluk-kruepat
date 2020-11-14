@@ -21,7 +21,7 @@ const postList = [
         caption: "2018  10月 17号  佳佳生日Trip",
         desc: '<br> 每次的分开 都会让 跟珍惜 我们能拥有的时间。 每次的分开 只会让我更想你 跟爱你。 因为 我知道 我们 是不简单的。  <br>',
         img1:
-          "https://lh3.googleusercontent.com/O_FVcprm8zOo47QnCi3QCDybxjckwF9RvY-Kp5W836eqT1e2X1-DWxaoGsM7TcmNrQt8uPBpBpnwc9onlmUqyjO6v0CpK-iON3NWJmToI77ARd0xAD4YVy2hzGuoaOWQyd9jUXf9Ma6wCoriMG6ZZQLT5L_fBGnAGzJHPfxuZ2H_FgYW1aAa2eMED3g4tcvqu9NxllBzOt-OlbeNbzF30-6nshZIT03R-hnllwLg_qrNfN1mZZssuE-J8n334sCjLpr1n23vdbTd9IctNGOSEx9zdDkY5Zf4Hig4SnD7VV3yhSMtfg2aTGFMhpfpKhxdT52TNWhkfSxGp4ZCvSVf9HOattEB9xxFcsobYK6RE8R1Qv4FZTxJLd1OV9cZR0vMqirVqqH6QV39SX2MCh78l97rAjX7KuAHvhHGhmQKnYDhsyzjgt3b1tEhU0gALFgHUwZav-KG_Ly2C46XeAcfa3w71NH1M80a7eE7xil1GZlkgHyiXpDC7aDATgjgHDQ3ymyh9GMqDzcqiOrmKpebDAbs2UEWjJtuTpAWQ-ij9bGSFWeXngamg0H6-fMnlYyRhh2pGjYw4zl26e-LZvEvJIL5bdiKyKDCKCqMFG_p0iwdMUhoQidyRyiJmE-02cOn6iWf_NPx5pJ0wTnkpL_w2KjFzP8t0VIcxhW8lsOPwoaEnhIjIs2DBIzUEaRVjw=w1024-h1364-no?authuser=0",
+          "https://i.ibb.co/cXMBZhM/IMG-20181017-163838.jpg",
         img2:
           null,
         img3:
@@ -30,7 +30,7 @@ const postList = [
           null,
       },
     {
-        date: "Agus 16, 2018",
+        date: "October 16, 2018",
         caption: "2018  10月 17号  佳佳生日Trip",
         desc: '<br> 最后一天了。 回去之前 我们先去吃个饭 本来 要去 说着 那个 情侣 一个香港人 一个泰国人。 他们开的咖啡店 一起聊聊天。( 我也想我们也可以 想他们一样 可以每天在在一起 即使 不赚钱 只要 能陪着对方身边 已经很满足了 )。 <br><br><br> 但是没开 所有我们就走到里面 去 。 里面跟漂亮 食物也不错好吃。  还给宝宝 拍了非常漂亮的照片 我也很喜欢 那张。 <br><br><br> 宝宝 哭了 我就笑 尽量不要让你那么伤心。 虽然这样没用 。  <br>',
         img1:
@@ -43,19 +43,19 @@ const postList = [
           "https://i.ibb.co/f8rM5GZ/IMG-20181017-115026-copy.jpg",
       },
   {
-    date: "Agus 16, 2018",
+    date: "October 16, 2018",
     caption: "2018  10月 16号  佳佳生日Trip",
     desc:"<br>给宝宝的  布置 好像太夸张 不知 会喜欢吗 哈哈。 其实 开完等你洗澡给你看看 。<br>",
     video: "https://www.youtube.com/embed/GKENnLSJcPI",
   },
   {
-    date: "Agus 16, 2018",
+    date: "October 16, 2018",
     caption: "2018  10月 16号  佳佳生日Trip",
     desc:"<br>我的宝宝 太可爱了 每次看到你笑 我都很开心 。 因为你笑时候真的很美丽<br>",
     video: "https://www.youtube.com/embed/q_K9du-_fig",
   },
   {
-    date: "Agus 16, 2018",
+    date: "October 16, 2018",
     caption: "2018  10月 16号  佳佳生日Trip",
     desc:
       "<br>早上起来给宝宝做早餐吃。 宝宝也给我做早餐吃。 我很享受这样的生活 简单 却很有爱 。 <br><br><br> 我做了 鸡蛋 还是 香肠 <br><br><br> 宝宝做了一个狠辣的食物. 但是 我可以吃 就是一直流汗。 因为 是宝宝做的 我一定要吃完。 哈哈。   <br>",
@@ -69,7 +69,7 @@ const postList = [
       "https://i.ibb.co/3WrtyQB/IMG-20181016-135602.jpg",
   },
   {
-    date: "Agus 14, 2018",
+    date: "October 14, 2018",
     caption: "2018  10月 14号  佳佳生日Trip",
     desc:
       "<br>看到你那么享受 吃爱吃的食物我 很开心。  很高兴看到你开心。  <br>",
@@ -83,7 +83,7 @@ const postList = [
       "https://i.ibb.co/pyCgwqC/IMG-20181015-195401.jpg",
   },
   {
-    date: "Agus 14, 2018",
+    date: "October 14, 2018",
     caption: "2018  10月 12/ 14号  佳佳生日Trip",
     desc:
       "<br>每次你不在家的时候 我每次 起床 就给你 整理 你的房间 给你 好好舒服 不用做这个做那个。 只想你可以享受。 <br><br>我每次都会给你装满满的水 就是 害怕你一个人 那么重  要爬5楼 才可以到房间 （我想给你一个家 但是 我害怕我做不到 我不敢说 但是 我都有在努力 即使现在 还是一样 目标只想给你一个家 可以照顾你 可以好好爱你  让你好好享受 不用 做那么多。 ）。 所以 我把 我能做的都给你做。因为 我知道 我只能做那么几天 。 过后就得你自己弄了。<br><br> 知道家有蟑螂 就弄了一个 可以杀死蟑螂的东西 放在 桌子下面。  <br>",
@@ -97,7 +97,7 @@ const postList = [
       "https://i.ibb.co/VH9B719/IMG-20181015-113322.jpg",
   },
   {
-    date: "Agus 13, 2018",
+    date: "October 13, 2018",
     caption: "2018  10月 12/ 13号  佳佳生日",
     desc: "<br>舒服在享受的小宝宝。 <br>",
     img1:
@@ -110,7 +110,7 @@ const postList = [
       "https://i.ibb.co/4pkWDH3/IMG-20181013-211120.jpg",
   },
   {
-    date: "Agus 12, 2018",
+    date: "October 12, 2018",
     caption: "2018  10月 11/ 12号  佳佳生日 惊喜的前一天",
     desc:
       "今天 就是我的佳佳 生日 我要给他一个惊喜 所以我就特地和他说今天会和忙 很多事情做。 可能不能你视频。 到了5.30 后 我就赶紧跑着回去机场的路上 我非常害怕出错 还是漏掉什么了。 到了 机场的火车站我发现我东西不见了。 一直找才发现 其实东西就在我的裤袋里面。 非常赶的。 火车又慢 到了 机场我得第一时间飞去 机器那边 打印等机票 但是 因为飞机 会在半小时内飞走 所有 机器不能打印了。 要去 柜台 。 觉得还是弄到了。  这样我就做做上飞机了。 休息下2小时半就到曼谷。<br><br><br> 到了曼谷后我第一时间就是打开网络 给你 知道 我还在忙 可能今天不能视频了。 但是我这样弄好像给你发现我在泰国了。 过后我就立刻 跑去打grab 第一时间 到你家。 到你家后 <br><br><br> 第二个问题出来了。 我因为 没有办法叫你 因为要给你惊喜 所以 只能靠别人让我打开门去上面 等了好久总有等到 一个做 motor 的司机。 我不能说泰语 所以就用手机给他翻译些说  “我要给我女朋友惊喜 她今天生日 ” 他也很好 明白了 给我上去 。 我上到去后. 我就给你打电话说 你在哪里要。 一直逗你 。 然后我就悄悄你的门 说我在外面。 哈哈。 你就很开心的开门 。 然后就放下相机 就抱着你。 太久没有抱你了。 想念你了。 然后你也告诉我说 其实我开facebook 的时候你已经知道 我到了。 但是不敢确定。 我知道你工作需要 生活需要 让你的生活更加有 仪式感。 我就给你 买了你要想要的 灯， 椅子的白色布（你现在还在用着， 我很开心 ，因为 你有好好的 用我给你东西 我很开心）。 还有很多 很多 其实我买给你 只是想让你生活过得好一些 开心的一些 毕竟 我不在你身边 已经是我们最大的问题。 所以我只能这样做 。 其实这些东西不是很贵。 我也有能力给你的。 我知道你每次 都很开心 也很不开心 因为我花钱。 其实我觉得为爱的人花钱 一点都没问题  非常值得。 因为我知道 宝宝也很爱我。 <br><br><br> 这一次 我们没去太远的地方 因为 这次也只是呆几天而已。 过一天就要回去了。 所以我们就去了 Khao Shan 那边。一早起来我们就一起去 Terminal21 吃早餐。 过后我们走路去 Khao Shan 。 对不起要你走那么远。 为了 让你 舒服 我们晚上就去了 按摩 。 知道你喜欢按摩 一直没有时间去 现在给你去了。我们也去了 那边拍好多好多的照片 。 每个照片都是 我帮你 修 让你变成一个女神 发Facebook  。 <br><br><br> 剩下的几天 我们 就做了平常 情侣会做的东西。 我们一起逛街 带你去吃好吃的 一起逛夜市 。你说家里好像有蟑螂 所以我就弄了一个放可以弄死蟑螂的 东西 在你桌子下（其实我也不知道有没有用 至少试一试吧）。  隔一天 后你需要上班 所以我只能在家等你。 大概快 下班了 我就去 TOwn in Town 接你下班。 看起来一个很的东西 对我来说都是 很难的 很奢侈 。 因为我不是每次都有这个机会 接你下班。 因为宝宝生日 因为宝宝爱吃 MK 所以 一下班就接宝宝去吃好吃的。 隔天后， 宝宝又给我做了 爱心早餐 。 我也有做一些 。 但是你做的 那个食物太辣了。 我都一直流汗 但是宝宝做的食物真心好吃。 想到宝宝那么好 我好希望可以给你一个使用的厨房 以后就可以每天给我做好吃的。 到了 晚上， 我给宝宝布置 房间。 之前的灯因为怀了 所以这次要在弄。 还有上班的桌子 要好看一点 这样就会可以好好上班。 <br><br><br> 最后一天了 又要回去。今天我起得特别早。 开到日出 。 我亲了宝宝的额头 宝宝应该没发现。  宝宝 对不去 又让你哭了 。  因为 我要走了， 在车上 当我给你拍照你时候 眼睛又开始哭了。 在我们去机场前我们出去了好吃的 给你拍漂亮的照片 。 然后又要去 我们最不喜欢的地方。 机场。 到了机场 我们弄完东西后 我们 又回到我们每次呆的地方。 呆到快 到时间 登机了。 我就会给你打车先让你回 不想看到你哭 我一开你哭 我就哭了。 在登记时候我还真哭了。 我真的很想你 狠爱你。 但是没办法 现实是残酷的。 <br><br>",
