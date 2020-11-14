@@ -221,7 +221,8 @@ body {
 
 .add-post-container {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  padding-bottom: 2rem; }
   .add-post-container .add-post-wrapper {
     background-color: #FFFFFF;
     border-radius: 10px;
@@ -334,7 +335,8 @@ body {
           margin-right: 1rem; }
         .post-container .post-wrapper__top-left .avatar-info-wrapper {
           display: flex;
-          flex-direction: column; }
+          flex-direction: column;
+          align-items: start; }
           .post-container .post-wrapper__top-left .avatar-info-wrapper__name {
             font-size: 15px;
             font-weight: 600;

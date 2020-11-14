@@ -4,25 +4,28 @@ import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from
 
 const postList = [
     {
+        date: 'Feb 06, 2018',
+        caption: '2018  2月 6号  第一天见面后的隔一天',
+        desc: '从曼谷回来了。的第二天 。 <br><br>已经不习惯没有你在我身边。 想再和你 第一次和你在一起睡的时光。 <br><br>突然又回到 电话视频 感觉彼此都不开心。 我只能下次再找你。 希望那时候我们那样好。 我还给你 发我们的合照。我只能说 我想你 我爱你。 只是我没说 但是 我真心爱你的。',
+        img1: 'https://lh3.googleusercontent.com/cUDGLJvCh90pNS4wFpScxD2scHeav6pcd2MmIJBr6zcjtmtCpubt9Xmhe1RGapg8tlnsIHOwl1p00AvmkxAKMBX-35UypIGoofnVZGDcJTINkp3qFqBK7wgpZQZcnvJmAuPipHkZHeY8qY8TTMXG5hCgYdzlw4YBExCUxLZwMnprwEncH4hmGImJzIdA5EznEjqkToT-GKYLshqIYCMaijuqaB1tuLWQN05eCSujmVsJVdCxtnuHrrj8bt2XHz4R5KYHudHI6J30UcmjCTsBlyOPDjFwV5hY8qzvjN8o_3DZam5BAnmjg-h5QL_fRDC0dXdn-M5CQ3knAV6uiVFLaPSsrUUCQLdusIBB2IG2eCrFjSK9tdcpJxzQZf6m_Fo5ScBmYQx-SP1Kk9Qr0NnkiZzcyqx7GlhGnp5whOqxvU46QXDypkdeYjrrrtqez5lEX6g3XrYNnRurNdz4EJYTlmJ9mAWjUzxl5pCJuNE4v_NtW_ELHp-7N6y1TagnQd_XjcDHWv1anK9ZTR3HJ5KdFmLeA_pW3lKTyDu_TrRn40oSzD4mrSfW9HbcXI0IoZrbQvT5yiZP7ZBocPxQSrbH85mzon9GhWEf4-Qrbzoy7K8Yo5ryXlwNJ4poXdFbZC78qFySXhJWrWwyASJsJ5-cq_bO5OvudUiJ5KLp_dVh6dkDndsWsXa52VN3b9n6bg=w1024-h1364-no?authuser=0',
+        img2: 'https://lh3.googleusercontent.com/xcwurktGV5_aZp6QQh_YFlAbOrREn8OrlJh0wfivZn3ycbaO3mvWtuLSKaghUnc67JUIFykERvxJG4kWYlff2rKkIjemzNeewvxL9NpCtbVOIJ8nzPPrRgFJpkeb3W-wNB-To7GAdh8nLnc0jPlXPhjA24ee8UV573Vr_wMeQ86C_LitNRB7SMTenL2oaU5W9j1V2J94md4qaKtbbNPFfgFiKyQcVTaic_qtAkZbcQaRYG4DP4WiDCqhel2vinJt6zXUkFM1y9NFXKiFnkp99JTWehGy62FQq4W00Q35tKCM3GL4cjqTVR0AVRFPLuBznfLGHuI3M3TT4RKpGKSwE_JrxuZapvVTvUwUqDtQq37e_niZtdr53S09NvyhL6oDScI7R3Y2awGBaMo-Rf_X2rsj8hB_B-tl_TO6tbAUBpGjHKR_QTDDSRul53N_2GCCxdGbJ32VyKFsMOXx2HFpbq0INdyjlXyKD4IcKW46Dga5KBpODPSFtbrj442EijlfWaFD59oG8IPI6a4tn2pFsH5pH8n8guEQmvhIbMm4hRTEe1o4_GBTgwgzYp8tS5mQvX5fQ0V8e7jc4OCkbOMQOId1zhmA_5etfKPhbWMbXZIGJaCLkAgBzXbJkYATrNJvzhGRP4p1pfjQ4uTypsLCFEMX7wCHCAT4Q2p0FZcKTxD5UMIGFPzGV2m2fI2U_w=w1920-h960-no?authuser=0',
+        img3: 'https://lh3.googleusercontent.com/zDbNEsU7H_gW-7SGnlY0SBYF7FKuQZ2f5Zspw77Gaiz53PDWnUNArcpXJmWyiythL6yQJs0ut7S3jzms935ayXIa-sAEMtr6PlvrE6uu5EuNooZv9klMaaWUbMEoolTqRAtI7jAI7DJXrcrThqvKo6Ng2bHqDTITWXv75EZzwcHQNUIG-h99B83P6C4f5sV_iq3gpoqZNguWTMfD8r9BkJRrg__L5xQ32AdjUfOEOBuzAx1lXL66UGg0_eyMuRdqX_LKTuxpARxPpK3ZdCJJdL53vRX05szgX5U5PO7qlfolYPEb5PWoRr2OD0U6oKUEO6l4e3-WvwXLMRz2dHXiihdNxlaVCC6aUh5Z7tGBhHWQj86QRx-iZfYZAWYIY4rnCsdWR--uStlYa5mgODN4QLwQ3RmczWjd4A1svmlYGHqTSpRqV2sWJdkVuaJ0UcVZ_Uof2vh4sT9mbtip-k0Ee3wXd6z9ZWMRNlaJ5fMhZxMQbrhLnWt3bheQcAEV8pMRx-wFwy4rfZMBZhESx5Vm28pzadSUnp-ajhrCUzlcw5c1dw9S1TxcAOqRQd-1qQBNAqrvP3UIY0Z-naFjIBohQZPXU5w2yz1E2rJGLSp-1hziD6x9f1xtu51uVUONk5moK7bIoIlJEOET2wW85ecmE4W264TctY6LFfaaVyYq8Ra-SYgV4jCfqSFp7gt19w=w768-h1364-k-no?authuser=0',
+        img4: 'https://lh3.googleusercontent.com/0pZ7L33jyWMwE4vtn90FPraAdz-pCIpcmfPcG0lskgkE3OFB1X8J9fEHgoe8c3IHylmoEZ821GOOe94Z-kXcVFshdhVWuMG4Pgc8LV3wHXG8n89UWVLESqXYTaJGhi6DvmRNPgiGtoiNA7QSHaUr5h6jG8NfB4rbOQlLiqBhJKa-mmgmZzG2hejCTQ7lsMNGOEz8-fxR4XBGC3h-snpLpRU4TsAHE9j-vqbYzFGhvY78QejIUEcjjJ-r_fPZwN9dNml2ns97854cz6yQbM1v51v3TPuUw7zYL1Js_60ztmig3qKFGrK7GQ1EIhuFCbD7_KhR62Em_J-Cb8k6CYFGFHQpQxVuSYnQ__UHBl-5dDBSZYMz-3zpUEMdxV7ovogRlCdnGHIKFlt6vtufZiUivKHx-tEViagWrFZ5EDgNCo7Y9f1aO4SMhG6YF9Dy0Qn_1FTIhvOeWGEqGVYH9ixIt5nvm0NqewdsijxdqJyGID--LJVojjjK0VQ5gd3DD_WLIcDB4a93-f_rvlZVPEf_9Ug3VW3BLpcn8A8TFSrALtgX-j_ooVux9Yk7EyNvwZy0_dbpk7yzNZhVNYIjNnTYCVXSFHzpew68Jb55_iin4gPSt5b_ybbbwu2pDENBZlsWOeQtLIiTdTg7lolOYnz-waVBz-KDD9JxxwXvE_osx4NWd4Lcg_GoKw3vgKE8LQ=w1024-h1364-no?authuser=0'
+    },
+    {
+        date: 'Feb 05, 2018',
         caption: '2018  2月 1号 我们的一次见面',
-        desc: '说真的这是我最开心的一天 因为谈了那么久 每天视频 。现在总有有机会去看你。 我虽然每天喝你视频 但是我还是害怕我长得不好看 害怕你会跑掉。<br><br>我们第一天我非常紧张以为第一天为了一个心爱的女孩 特地一个人冲外地飞过来。 我自己我自己做的决定不会错的。 还记得你那时候在上班。 我和你说慢慢来 不要匆忙。 你说 你冲ASOK 那边过来。 现在塞车 会有点久 我说没关系 我可以等你。<br>然后我们就像电影一样。 第一次见面 一直好紧张。 在车站上面人很多 人来人往。 我就一直看一直看。 你知道是谁先见到对方么。 是我  我就叫着你。 你虽然长不高。 但是我还是能找到你。第一次见面的时候就别你的笑容打动了。 笑得很可爱。 <br>然后我们就一起去了Neon Night Market. 我们一路上虽然话不多 但是我还是对你有情趣的。 因为 你太可爱了。 我们边走边聊天。<br><br>我知道你想要钻饰你的房间不好看 想买东西。我们就买了一些灯泡。问问呢晚餐想吃什么 想吃鱼就点鱼。吃完付钱后 你问多少钱 我说我请你吧。 虽然知道我不会要你付钱的 但是你还是很有礼貌问了一下。<br><br>吃完后 我们就在漂亮的这里拍照。 我一开始有点尴尬 不敢和你拍。 一直说 我给你拍照吧。 你怕把。 到最后我们还是拍了几张合照。<br>然后最后我们就一起走了搭地铁回酒店。 其实这是我的第一次。 可能是我们聊了很久 知道对方不是玩玩的 是认真的。 所以我们就很自然的一起睡觉。 我这次旅行其实我也准备了一些礼物给你。 我觉得钱 能买到很好的礼物。 但是我觉得最好礼物就是出之于对方的手做出来的。<br>我给你做了个视频 。 里面都是我们还没在一起见面的回忆。 我把它做成了一个视频。 即使以后也可以回放 。 你也被我感动了。 就这样我们就在一起睡。 <br><br><br>第二天<br><br>隔天起来 我们就一起做床去 王宫。 你去不用付钱 我去要付钱 。 我还傻傻说 你叫我泰语我就能假装泰国人进去不用付钱了。就这样我们又在王宫 过了半天。 一路上很热。 我还一直叫你喝水 就怕担心你。去了王宫 我们也一起去了 China Town 。<br>到了晚上。 我就和你回你的家。 回家路上我看到路上那么黑 我还真担心你一个女孩 在这里生活。 好像可以一直陪着你 在你身边。<br>我还和你说 那么晚 以后不要以个人在外面走 危险。 晚上肚子而来 你带我到你第一个家的 附近吃晚饭。 我就点了我喜欢的Padthai。 而你就对了类似Salad 木瓜的食物。<br>吃完了到你就 我就给你布置你家 。给你安装小灯笼 然你会有家的感觉。 不会害怕在这里一个人。<br><br><br>第三天<br><br><br>这是我的最后第二天了。 我们就去拜拜四面佛。 我也是第一次。 我也不知道求什么的。 我只说了一些 我们的事情。 希望可以好好在一起到。  也算是有实现了一些。  我们就去了Lumphini 公园走走 看看风景 好好陪对方 。什么也不做。 我记得我们那天坐在椅子上说了很多 我们的东西。 你靠在我肩膀上 。 我看不到你有没有哭。 但是我知道你眼睛红红的。你告诉我 我不想你离开。 其实我也是 我不想我们离开。 我想可以一直在这里陪着你。<br><br>差不多要晚上了。我就带你去 酒吧。 因为前几天我们都是简单的旅程 所以想在最后一天前 带你去逛逛好玩的 好看的地方. <br>我们也未各自拍照发照片。 回家路上 竟然遇到 姐姐上班的朋友。 一路上 回家了 。 我们什么也没做就抱着一起睡。<br><br><br>最后一天了。<br><br><br>你需要上班。 没办法送我。 我其实特别想你送我 但是想到你一会哭 我就直接去。 我们还在要走之前 在床上好好休息 你看我 我看你。 什么也不能做 只能看着和对方 离开。你要上班了 我也要走了。 我们就抱着一起。 好想我们可以再包在一起。我送你去Town in Town 上班。 我就去MCD 等一会去机场 。 在MCD里面 我真的很想你。 但没有办法我就得回去了。 每次我都在飞机上翻开我们在这次旅程中拍过的照片 回忆过去。 我每次想了 眼睛就红红的。 我不想和你离开。',
+        desc: '说真的这是我最开心的一天 因为谈了那么久 每天视频 。现在总有有机会去看你。 <br><br>我虽然每天喝你视频 但是我还是害怕我长得不好看 害怕你会跑掉。<br><br>我们第一天我非常紧张以为第一天为了一个心爱的女孩 特地一个人冲外地飞过来。 我自己我自己做的决定不会错的。 还记得你那时候在上班。 我和你说慢慢来 不要匆忙。 你说 你冲ASOK 那边过来。 现在塞车 会有点久 我说没关系 我可以等你。<br>然后我们就像电影一样。 第一次见面 一直好紧张。 在车站上面人很多 人来人往。 我就一直看一直看。 你知道是谁先见到对方么。 是我  我就叫着你。 你虽然长不高。 但是我还是能找到你。第一次见面的时候就别你的笑容打动了。 笑得很可爱。 <br>然后我们就一起去了Neon Night Market. 我们一路上虽然话不多 但是我还是对你有情趣的。 因为 你太可爱了。 我们边走边聊天。<br><br>我知道你想要钻饰你的房间不好看 想买东西。我们就买了一些灯泡。问问呢晚餐想吃什么 想吃鱼就点鱼。吃完付钱后 你问多少钱 我说我请你吧。 虽然知道我不会要你付钱的 但是你还是很有礼貌问了一下。<br><br>吃完后 我们就在漂亮的这里拍照。 我一开始有点尴尬 不敢和你拍。 一直说 我给你拍照吧。 你怕把。 到最后我们还是拍了几张合照。<br>然后最后我们就一起走了搭地铁回酒店。 其实这是我的第一次。 可能是我们聊了很久 知道对方不是玩玩的 是认真的。 所以我们就很自然的一起睡觉。 我这次旅行其实我也准备了一些礼物给你。 我觉得钱 能买到很好的礼物。 但是我觉得最好礼物就是出之于对方的手做出来的。<br>我给你做了个视频 。 里面都是我们还没在一起见面的回忆。 我把它做成了一个视频。 即使以后也可以回放 。 你也被我感动了。 就这样我们就在一起睡。 <br><br><br>第二天<br><br>隔天起来 我们就一起做床去 王宫。 你去不用付钱 我去要付钱 。 我还傻傻说 你叫我泰语我就能假装泰国人进去不用付钱了。就这样我们又在王宫 过了半天。 一路上很热。 我还一直叫你喝水 就怕担心你。去了王宫 我们也一起去了 China Town 。<br>到了晚上。 我就和你回你的家。 回家路上我看到路上那么黑 我还真担心你一个女孩 在这里生活。 好像可以一直陪着你 在你身边。<br>我还和你说 那么晚 以后不要以个人在外面走 危险。 晚上肚子而来 你带我到你第一个家的 附近吃晚饭。 我就点了我喜欢的Padthai。 而你就对了类似Salad 木瓜的食物。<br>吃完了到你就 我就给你布置你家 。给你安装小灯笼 然你会有家的感觉。 不会害怕在这里一个人。<br><br><br>第三天<br><br><br>这是我的最后第二天了。 我们就去拜拜四面佛。 我也是第一次。 我也不知道求什么的。 我只说了一些 我们的事情。 希望可以好好在一起到。  也算是有实现了一些。  我们就去了Lumphini 公园走走 看看风景 好好陪对方 。什么也不做。 我记得我们那天坐在椅子上说了很多 我们的东西。 你靠在我肩膀上 。 我看不到你有没有哭。 但是我知道你眼睛红红的。你告诉我 我不想你离开。 其实我也是 我不想我们离开。 我想可以一直在这里陪着你。<br><br>差不多要晚上了。我就带你去 酒吧。 因为前几天我们都是简单的旅程 所以想在最后一天前 带你去逛逛好玩的 好看的地方. <br>我们也未各自拍照发照片。 回家路上 竟然遇到 姐姐上班的朋友。 一路上 回家了 。 我们什么也没做就抱着一起睡。<br><br><br>最后一天了。<br><br><br>你需要上班。 没办法送我。 我其实特别想你送我 但是想到你一会哭 我就直接去。 我们还在要走之前 在床上好好休息 你看我 我看你。 什么也不能做 只能看着和对方 离开。你要上班了 我也要走了。 我们就抱着一起。 好想我们可以再包在一起。我送你去Town in Town 上班。 我就去MCD 等一会去机场 。 在MCD里面 我真的很想你。 但没有办法我就得回去了。 每次我都在飞机上翻开我们在这次旅程中拍过的照片 回忆过去。 我每次想了 眼睛就红红的。 我不想和你离开。',
         img1: 'https://lh3.googleusercontent.com/pw/ACtC-3fIFVJXKU6bJZ5LXPFmrJH1om7KWLtRwNBmIAdvecVv53hpVtFbvKUk6rdzh5TUw7HuTdlIB3yAUpnTfX9kBXVEHwNC3WLC-8rggQ-lDtatZPUFmsZyCmtMiW-DHvv3nKuUysqAL-WTZfCIVqpV0_Rkqg=w1820-h1364-no?authuser=0',
         img2: 'https://lh3.googleusercontent.com/pw/ACtC-3dqiboBlCA38EDlF2KpNQluuAii0KlXdzPZINHTNSpkqb5QwIYvp-oIt2ZdzkQhsdSfW-quDqAN_88eUmssTTlxamAq3z7anfHYaO3xrF7fObvoe1Ia1kZfrEcbwdvPMcpx0-u9K8ktTMyqansAbOUeDg=w1820-h1364-no?authuser=0',
         img3: 'https://lh3.googleusercontent.com/pw/ACtC-3fWRUEEauChT4ek0V1pWRqSqXm35HcfkXqtdbGm451esMwiCAabblgvX7fL6E4Kwvh6OrOyNhtUOQtIC4ttJyq8gd4RatSAzEmbA4SRYIqXpwy70X7YQwB7MN2LlAHGfh543aEBwRtS50uQvilyedHVUA=w1820-h1364-no?authuser=0',
         img4: 'https://lh3.googleusercontent.com/pw/ACtC-3c2uL2X5HAf9e284rcXRz8bphwjJHU160kmLKh2IEuqJK6MjDIQyc4vynsaKVWSdR-Y13aLRVA8bvFRa0dcml3iWHGBKAPubKpx0t1wAmHAmouErVRQs0A_-c-20KlQp_BF_AtsbnYlq3BVFPCFOnb48w=w1820-h1364-no?authuser=0'
 
     },
-    {
-        caption: 'Second Post',
-        desc: '',
-        img1: 'https://photos.app.goo.gl/MFTH9hPMo1biizSbA',
-        img2: 'https://photos.app.goo.gl/8ZFq1FAwVgHvm7NU7',
-        img3: 'https://photos.app.goo.gl/nqByLVb1LKFGdrNN6',
-        img4: 'https://photos.app.goo.gl/RFNgvGZ7cLYJmxP36'
-    }
+ 
 ]
 
-const LittlePost = ({caption, desc, img1, img2, img3, img4}) => {
+const LittlePost = ({date, caption, desc, img1, img2, img3, img4}) => {
     return (
         
         <div className="post-container">
@@ -38,7 +41,7 @@ const LittlePost = ({caption, desc, img1, img2, img3, img4}) => {
                         <div className="avatar-info-wrapper">
                             <div className="avatar-info-wrapper__name">Rong Zhao</div>
                             <div className="avatar-info-wrapper__info">
-                                <div className="avatar-info-wrapper__info-time">15 mins</div>
+                                <div className="avatar-info-wrapper__info-time">{date}</div>
                                 <div className="avatar-info-wrapper__info-privacy">
                                     <div className="global"></div>
                                 </div>
@@ -107,9 +110,10 @@ const LittlePost = ({caption, desc, img1, img2, img3, img4}) => {
     )
 }
 
-const listItems = postList.map((obj,desc, img1, img2, img3, img4) => (
+const listItems = postList.map((obj) => (
     <LittlePost
       key={obj.name}
+      date={obj.date}
       caption={obj.caption}
       desc={obj.desc}
       img1={obj.img1}

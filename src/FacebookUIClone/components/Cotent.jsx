@@ -191,7 +191,7 @@ const ContentCenter = () => {
     <div className="content_center_top-section">
       <Stories />
       <AddPost />
-      <Room />
+      {/* <Room /> */}
       <PostContainer />
     </div>
     <div className="content_center_top-section"></div>
