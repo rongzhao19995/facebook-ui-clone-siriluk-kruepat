@@ -404,6 +404,11 @@ body {
         /** Alternative Syntax **/
         /* grid-column: 1 / span 2;  */
         /* grid-row: 1 / span 2; */ }
+    .post-container .post-wrapper__video-section {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 500px; }
     .post-container .post-wrapper__btm-section {
       display: flex;
       flex-direction: row;
